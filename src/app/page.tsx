@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { Bebas_Neue } from "next/font/google";
 import { useEffect, useState } from "react";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 // Font for site title
 const bebas = Bebas_Neue({
@@ -107,11 +109,51 @@ export default function Home() {
         className="border-t border-black py-16 lg:py-24 px-2 lg:px-0"
       >
         <h2 className="mb-8 text-3xl font-semibold uppercase">Experience</h2>
-        <p className="max-w-prose text-lg leading-relaxed">
-          {/* Placeholder experience details */}
-          Coming soon: a timeline of roles, responsibilities, and design
-          achievements.
-        </p>
+        <div className="max-w-2xl mx-auto">
+          <VerticalTimeline
+            lineColor="#000"
+          >
+            <VerticalTimelineElement
+              contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
+              contentArrowStyle={{ borderRight: '7px solid #000' }}
+              date="2023 - Present"
+              iconStyle={{ background: '#000', color: '#f2efe8', boxShadow: '0 0 0 4px #f2efe8' }}
+            >
+              <h3 className="font-bold text-lg mb-1">Data Analyst Intern</h3>
+              <h4 className="font-semibold text-base mb-2">Finance Company</h4>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Analyzed large datasets to extract actionable insights.</li>
+                <li>Automated reporting processes using Python and SQL.</li>
+              </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
+              contentArrowStyle={{ borderRight: '7px solid #000' }}
+              date="2022 - 2023"
+              iconStyle={{ background: '#000', color: '#f2efe8', boxShadow: '0 0 0 4px #f2efe8' }}
+            >
+              <h3 className="font-bold text-lg mb-1">Software Developer</h3>
+              <h4 className="font-semibold text-base mb-2">Tech Startup</h4>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Developed web applications with React and Node.js.</li>
+                <li>Collaborated with cross-functional teams to deliver features.</li>
+              </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
+              contentArrowStyle={{ borderRight: '7px solid #000' }}
+              date="2021 - 2022"
+              iconStyle={{ background: '#000', color: '#f2efe8', boxShadow: '0 0 0 4px #f2efe8' }}
+            >
+              <h3 className="font-bold text-lg mb-1">Research Assistant</h3>
+              <h4 className="font-semibold text-base mb-2">University of Toronto</h4>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Conducted statistical analysis for academic research projects.</li>
+                <li>Presented findings at departmental meetings.</li>
+              </ul>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
       </section>
 
       <section
@@ -131,11 +173,80 @@ export default function Home() {
         className="border-t border-black py-16 lg:py-24 px-2 lg:px-0"
       >
         <h2 className="mb-8 text-3xl font-semibold uppercase">Projects</h2>
-        <p className="max-w-prose text-lg leading-relaxed">
-          {/* Placeholder projects details */}
-          Showcase of selected works, case studies, and collaborative
-          initiatives.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Project Card 1 */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/project1.jpg"
+              alt="Project 1"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-2">DataViz Dashboard</h3>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Dash</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Plotly</span>
+              </div>
+            </div>
+          </div>
+          {/* Project Card 2 */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/project2.jpg"
+              alt="Project 2"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-2">Supply Chain Optimizer</h3>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Pandas</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">NumPy</span>
+              </div>
+            </div>
+          </div>
+          {/* Project Card 3 */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/project3.jpg"
+              alt="Project 3"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-2">ML Stock Predictor</h3>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">scikit-learn</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">TensorFlow</span>
+              </div>
+            </div>
+          </div>
+          {/* Project Card 4 */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/project4.jpg"
+              alt="Project 4"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-2">Personal Portfolio Site</h3>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">TypeScript</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">React</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Next.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
