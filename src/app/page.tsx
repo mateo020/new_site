@@ -108,14 +108,16 @@ export default function Home() {
 
       <section
         id="experience"
-        className="border-t border-black py-16 lg:py-24 px-2 lg:px-0"
+        className="border-t border-black py-16 lg:py-24 px-2 lg:px-0 relative"
       >
         <h2 className="mb-8 text-3xl font-semibold uppercase">Experience</h2>
+        {/* GLB model absolutely positioned in front of timeline */}
+       
         <div className="max-w-2xl mx-auto">
           <VerticalTimeline
             lineColor="#000"
           >
-            {/* First timeline element and 3D model side by side */}
+            {/* Software Developer Intern element */}
             <div className="flex flex-col lg:flex-row items-stretch w-full">
               <div className="flex-1">
                 <VerticalTimelineElement
@@ -134,10 +136,12 @@ export default function Home() {
                   </ul>
                 </VerticalTimelineElement>
               </div>
-              <div className="flex-1 flex items-center justify-center p-4 min-h-[320px]">
-                <GLBViewer modelUrl="/0a7f7cf3-bb50-40da-8610-477fc0dec503-textured.glb" />
-              </div>
+              
             </div>
+            <div className="absolute left-1/2 top-0 -translate-x-50 translate-y-105 z-170">
+              <GLBViewer modelUrl="/0a7f7cf3-bb50-40da-8610-477fc0dec503-textured.glb" />
+            </div>
+            {/* Analytics Engineer element */}  
             <VerticalTimelineElement
               contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
               contentArrowStyle={{ borderRight: '7px solid #000' }}
