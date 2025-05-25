@@ -75,41 +75,28 @@ export default function Home() {
       <div className="h-4" />
 
       {/* Hero grid */}
-      <section className="grid gap-6 lg:grid-cols-[1fr_380px]">
-        {/* Main feature image */}
-        <div className="border border-black bg-white">
-        </div>
+      <section className="grid gap-4 lg:grid-cols-[360px_1fr]">
+  {/* Main feature image */}
+  <div className="bg-white">
+    <Image
+      src="/img_0337.jpg"
+      alt="CN Tower Toronto"
+      width={1000}
+      height={1500}
+      className="h-auto w-full object-cover"
+      priority
+    />
+  </div>
 
-        {/* Sidebar */}
-        <aside className="flex flex-col gap-6">
-          {/* First card */}
-          <article className="border border-black bg-white flex flex-col">
-            <div className="p-4">
-              <span className="mb-1 block text-[0.6rem] font-semibold uppercase tracking-wider text-gray-600">
-                Guide
-              </span>
-              <h2 className="mb-3 text-base font-semibold leading-tight">
-                5 Must-Have Spring-Summer Dining Essentials from VdeV Maison
-              </h2>
-              <div className="flex flex-wrap gap-1 text-[0.55rem] uppercase tracking-wider">
-                <span className="bg-[#eae7df] px-2 py-0.5">Editors Picks</span>
-                <span className="bg-[#eae7df] px-2 py-0.5">Furniture</span>
-              </div>
-            </div>
-          </article>
+  {/* Sidebar with intro typewriter message */}
+  <aside className="bg-[#f2efe8] flex items-center justify-center p-6">
+    <Typewriter
+      text={`Hi! Welcome to my portfolio!\n\nI am a Statistics and Computer Science student with experience in data analytics and software development.\n\nMy experience spans statistical and data analysis, research methods, and leveraging these skills to drive meaningful insights.\n\nI am passionate about machine learning and data science, and I am eager to apply my expertise to solve complex problems.`}
+      speed={25}
+    />
+  </aside>
+</section>
 
-          {/* Second placeholder card */}
-          <article className="flex flex-col justify-center border border-black bg-white p-4">
-            <h2 className="mb-3 text-base font-semibold leading-tight">
-              The Future of Handmade at 100% Silk Shop
-            </h2>
-            <div className="flex flex-wrap gap-1 text-[0.55rem] uppercase tracking-wider">
-              <span className="bg-[#eae7df] px-2 py-0.5">Profiles</span>
-              <span className="bg-[#eae7df] px-2 py-0.5">City Living</span>
-            </div>
-          </article>
-        </aside>
-      </section>
 
       {/* ------------------------------------------------- */}
       {/* Additional content sections */}
@@ -151,5 +138,31 @@ export default function Home() {
         </p>
       </section>
     </div>
+  );
+}
+
+// -------------------------------------------------
+// Simple Typewriter component
+// -------------------------------------------------
+function Typewriter({ text, speed = 40 }: { text: string; speed?: number }) {
+  const [displayed, setDisplayed] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setDisplayed(text.slice(0, index + 1));
+      index += 1;
+      if (index === text.length) {
+        clearInterval(interval);
+      }
+    }, speed);
+    return () => clearInterval(interval);
+  }, [text, speed]);
+
+  return (
+    <p className="whitespace-pre-line text-lg leading-relaxed md:text-xl">
+      {displayed}
+      <span className="animate-pulse">|</span>
+    </p>
   );
 }
