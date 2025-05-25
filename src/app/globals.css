@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F2EFE8; /* cream background */
+  --foreground: #000000; /* pure black text */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans); /* Inter (loaded via next/font) */
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f2efe8; /* maintain same cream in dark mode for consistency */
+    --foreground: #000000;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
