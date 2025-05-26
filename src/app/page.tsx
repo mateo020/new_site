@@ -173,7 +173,7 @@ export default function Home() {
               <h4 className="font-semibold text-base mb-2">AR Environmental Solutions</h4>
               <ul className="list-disc pl-5 text-sm">
                 <li>Supported literature review on organic food and health outcomes.</li>
-                <li>1st place, Sobey&apos;s Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
+                <li>1st place, Sobey's Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
                 <li>Ran statistical analysis on lab tests involving mineral concentrations.</li>
               </ul>
             </VerticalTimelineElement>
@@ -330,8 +330,8 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-1">Note Net</h3>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
-                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">scikit-learn</span>
-                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Pandas</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">LLMs</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">React.js</span>
               </div>
               <a
                 href="https://github.com/mateo020/NoteNet"
@@ -360,9 +360,9 @@ export default function Home() {
             <div className="p-5 flex-1 flex flex-col">
               <h3 className="text-xl font-bold mb-1">Personal Website</h3>
               <div className="flex flex-wrap gap-2 mb-2">
-                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">R</span>
-                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Shiny</span>
-                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Leaflet</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">React.js</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Vercel</span>
+                
               </div>
               <a
                 href="https://github.com/mateo020/new_site"
@@ -374,7 +374,7 @@ export default function Home() {
                 GitHub
               </a>
               <ul className="list-disc pl-5 text-sm">
-                <li>You&apos;re looking at it!</li>
+                <li>You are looking at it!</li>
                 
               </ul>
             </div>
@@ -398,7 +398,7 @@ function TypewriterStyled() {
   const headline =
     'Hi there — welcome to my portfolio!';
   const body = `
-I am fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I&apos;ve:
+I am fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I have:
 
 • Analyzed operational data, turning ad-hoc SQL, Python notebooks, and R scripts into automated ETL pipelines and Power BI dashboards that guide supply-chain and finance decisions.
 
