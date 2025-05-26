@@ -6,9 +6,9 @@ import { useEffect, useState, useRef } from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useEffect as useThreeEffect } from 'react';
-// @ts-ignore
+// @ts-expect-error threejs ESM import without types in Next.js runtime
 import * as THREE from 'three';
-// @ts-ignore
+// @ts-expect-error GLTFLoader comes from examples and lacks its own types
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // Font for site title
@@ -173,7 +173,7 @@ export default function Home() {
               <h4 className="font-semibold text-base mb-2">AR Environmental Solutions</h4>
               <ul className="list-disc pl-5 text-sm">
                 <li>Supported literature review on organic food and health outcomes.</li>
-                <li>1st place, Sobey's Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
+                <li>1st place, Sobey&apos;s Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
                 <li>Ran statistical analysis on lab tests involving mineral concentrations.</li>
               </ul>
             </VerticalTimelineElement>
@@ -313,11 +313,11 @@ export default function Home() {
               <ul className="list-disc pl-5 text-sm">
                 <li>Generalized Linear Mixed Model (GLMM) to analyze third-down football plays, catering to the hierarchical data structure from games to teams.</li>
                 <li>Trained Regression Model</li>
-                <li>The final model's adequacy was ascertained by plotting deviance residuals against predictors and calculating the AUC of the ROC curve.</li>
+                <li>The final model adequacy was ascertained by plotting deviance residuals against predictors and calculating the AUC of the ROC curve.</li>
               </ul>
             </div>
           </div>
-       
+          {/* Project Card 5: Note Net */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/note.png"
@@ -374,7 +374,7 @@ export default function Home() {
                 GitHub
               </a>
               <ul className="list-disc pl-5 text-sm">
-                <li> Yout are looking at it!.</li>
+                <li>You&apos;re looking at it!</li>
                 
               </ul>
             </div>
@@ -398,7 +398,7 @@ function TypewriterStyled() {
   const headline =
     'Hi there — welcome to my portfolio!';
   const body = `
-I'm a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I've:
+I&apos;m a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I&apos;ve:
 
 • Analyzed operational data, turning ad-hoc SQL, Python notebooks, and R scripts into automated ETL pipelines and Power BI dashboards that guide supply-chain and finance decisions.
 
@@ -498,14 +498,14 @@ function GLBViewer({ modelUrl }: { modelUrl: string }) {
     let model: THREE.Group;
     loader.load(
       modelUrl,
-      (gltf: any) => {
-        model = gltf.scene;
+      (gltf: unknown) => {
+        const loaded = gltf as { scene: THREE.Group };
+        model = loaded.scene;
         scene.add(model);
         animate();
       },
       undefined,
-      (error: any) => {
-        // eslint-disable-next-line no-console
+      (error: unknown) => {
         console.error('Error loading GLB model:', error);
       }
     );
