@@ -70,7 +70,7 @@ export default function Home() {
   {/* Main feature image */}
   <div className="bg-white">
     <Image
-      src="/img_0337.jpg"
+      src="/IMG_0337.jpg"
       alt="CN Tower Toronto"
       width={1000}
       height={1500}
@@ -398,7 +398,7 @@ function TypewriterStyled() {
   const headline =
     'Hi there — welcome to my portfolio!';
   const body = `
-I&apos;m a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I&apos;ve:
+I am fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I&apos;ve:
 
 • Analyzed operational data, turning ad-hoc SQL, Python notebooks, and R scripts into automated ETL pipelines and Power BI dashboards that guide supply-chain and finance decisions.
 
