@@ -173,7 +173,7 @@ export default function Home() {
               <h4 className="font-semibold text-base mb-2">AR Environmental Solutions</h4>
               <ul className="list-disc pl-5 text-sm">
                 <li>Supported literature review on organic food and health outcomes.</li>
-                <li>1st place, Sobey's Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
+                <li>1st place, Sobeys Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
                 <li>Ran statistical analysis on lab tests involving mineral concentrations.</li>
               </ul>
             </VerticalTimelineElement>
