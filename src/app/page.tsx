@@ -208,7 +208,7 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">FAISS</span>
               </div>
               <a
-                href="#"
+                href="https://github.com/mateo020/UTM-Course-LLM"
                 target="https://github.com/mateo020/UTM-Course-LLM"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
@@ -241,8 +241,8 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">GCP Vertex AI</span>
               </div>
               <a
-                href="#"
-                target="https://github.com/LucasNH/CSC413-Final-Project"
+                href="https://github.com/mateo020/ligament_injury_detection"
+                target="https://github.com/mateo020/ligament_injury_detection"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
               >
@@ -270,6 +270,15 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">PyTorch</span>
               </div>
+              <a
+                href="https://github.com/LucasNH/CSC413-Final-Project"
+                target="https://github.com/LucasNH/CSC413-Final-Project"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+              >
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+                GitHub
+              </a>
               <ul className="list-disc pl-5 text-sm">
                 <li>Built Denoising Adversarial Autoencoder to embed research paper titles.</li>
                 <li>Simulated noise patterns; optimized via L2 loss.</li>
@@ -292,6 +301,15 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Shiny</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Tidyverse</span>
               </div>
+              <a
+                href="https://github.com/LucasNH/CSC413-Final-Project"
+                target="https://github.com/LucasNH/CSC413-Final-Project"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+              >
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+                GitHub
+              </a>
               <ul className="list-disc pl-5 text-sm">
                 <li>Generalized Linear Mixed Model (GLMM) to analyze third-down football plays, catering to the hierarchical data structure from games to teams.</li>
                 <li>Trained Regression Model</li>
@@ -315,6 +333,15 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">scikit-learn</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Pandas</span>
               </div>
+              <a
+                href="https://github.com/mateo020/NoteNet"
+                target="https://github.com/mateo020/NoteNet"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+              >
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+                GitHub
+              </a>
               <ul className="list-disc pl-5 text-sm">
                 <li>Convert lecture recordings and handwritten notes into a personalized knowledge graph. It extracts key topics and concepts from audio and image inputs using AI to help students.</li>
                 
@@ -337,6 +364,15 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Shiny</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Leaflet</span>
               </div>
+              <a
+                href="https://github.com/mateo020/new_site"
+                target="https://github.com/mateo020/new_site"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+              >
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+                GitHub
+              </a>
               <ul className="list-disc pl-5 text-sm">
                 <li> Yout are looking at it!.</li>
                 
