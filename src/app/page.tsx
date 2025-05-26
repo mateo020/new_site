@@ -41,7 +41,7 @@ export default function Home() {
           <div className="flex items-center justify-between text-xs uppercase tracking-wider">
             <nav className="flex gap-7">
               <a href="#experience">Experience</a>
-              <a href="#education">Education</a>
+            
               <a href="#projects">Projects</a>
             </nav>
 
@@ -181,17 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="education"
-        className="border-t border-black py-16 lg:py-24 px-2 lg:px-0"
-      >
-        <h2 className="mb-8 text-3xl font-semibold uppercase">Education</h2>
-        <p className="max-w-prose text-lg leading-relaxed">
-          {/* Placeholder education details */}
-          Coming soon: degrees, certifications, and continuing education
-          coursework.
-        </p>
-      </section>
+    
 
       <section
         id="projects"
@@ -202,7 +192,7 @@ export default function Home() {
           {/* Project Card 1: UofT Course Navigator */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
-              src="/project1.jpg"
+              src="/utmLLM.png"  
               alt="UofT Course Navigator"
               width={600}
               height={400}
@@ -217,19 +207,26 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">OpenAI</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">FAISS</span>
               </div>
-              
+              <a
+                href="#"
+                target="https://github.com/mateo020/UTM-Course-LLM"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+              >
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+                GitHub
+              </a>
               <ul className="list-disc pl-5 text-sm">
                 <li>Deployed a full-stack RAG assistant that answers program- and course-related queries across 3k+ courses.</li>
                 <li>Python script to scrape timetable HTML into structured JSON and rendered an interactive prerequisite graph for 3K+ courses, streamlining degree-planning decisions.</li>
                 <li>Delivered similar course recommendations with a hybrid semantic + node2vec embedding pipeline.</li>
-
               </ul>
             </div>
           </div>
           {/* Project Card 2: MedACL – MRI Analyzer */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
-              src="/project2.jpg"
+              src="/ACL.png"
               alt="MedACL – MRI Analyzer"
               width={600}
               height={400}
@@ -243,6 +240,15 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">PyTorch</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">GCP Vertex AI</span>
               </div>
+              <a
+                href="#"
+                target="https://github.com/LucasNH/CSC413-Final-Project"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 mb-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+              >
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+                GitHub
+              </a>
               <ul className="list-disc pl-5 text-sm">
                 <li>Deployed and trained U-Net model for MRI ACL-tear segmentation + CNN classification model on GCP Vertex AI.</li>
                 <li>Wrapped in a FastAPI container, and served through Vertex AI Endpoints for real-time inference.</li>
@@ -252,7 +258,7 @@ export default function Home() {
           {/* Project Card 3: Research Paper Recommender */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
-              src="/project3.jpg"
+              src="/aae.png"
               alt="Research Paper Recommender"
               width={600}
               height={400}
@@ -273,7 +279,7 @@ export default function Home() {
           {/* Project Card 4: Bike-Share Demand Forecasting */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
-              src="/project4.jpg"
+              src="/nfl.png"
               alt="NFL Third Down Success Rate"
               width={600}
               height={400}
@@ -293,49 +299,47 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* Project Card 5: NFL Play Prediction */}
+       
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
-              src="/project5.jpg"
-              alt="NFL Play Prediction"
+              src="/note.png"
+              alt="Note Net"
               width={600}
               height={400}
               className="w-full h-48 object-cover border-b-[3px] border-black"
             />
             <div className="p-5 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold mb-1">NFL Play Prediction</h3>
+              <h3 className="text-xl font-bold mb-1">Note Net</h3>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">scikit-learn</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Pandas</span>
               </div>
               <ul className="list-disc pl-5 text-sm">
-                <li>Analyzed NFL play-by-play data to predict play outcomes.</li>
-                <li>Trained and validated classification models for play success.</li>
-                <li>Visualized feature importances and model performance.</li>
+                <li>Convert lecture recordings and handwritten notes into a personalized knowledge graph. It extracts key topics and concepts from audio and image inputs using AI to help students.</li>
+                
               </ul>
             </div>
           </div>
           {/* Project Card 6: Toronto Real Estate Dashboard */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
-              src="/project6.jpg"
-              alt="Toronto Real Estate Dashboard"
+              src="/site.png"
+              alt="personal website"
               width={600}
               height={400}
               className="w-full h-48 object-cover border-b-[3px] border-black"
             />
             <div className="p-5 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold mb-1">Toronto Real Estate Dashboard</h3>
+              <h3 className="text-xl font-bold mb-1">Personal Website</h3>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">R</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Shiny</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Leaflet</span>
               </div>
               <ul className="list-disc pl-5 text-sm">
-                <li>Aggregated Toronto real estate sales data from multiple sources.</li>
-                <li>Built an interactive dashboard for price trends and mapping.</li>
-                <li>Enabled filtering by neighborhood, property type, and time period.</li>
+                <li> Yout are looking at it!.</li>
+                
               </ul>
             </div>
           </div>
