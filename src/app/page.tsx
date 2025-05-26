@@ -113,7 +113,7 @@ export default function Home() {
                   <h3 className="font-bold text-lg mb-1">Software Developer Intern</h3>
                   <h4 className="font-semibold text-base mb-2">Philer.ai</h4>
                   <ul className="list-disc pl-5 text-sm">
-                    <li>Developed a voice-based intake agent using Python, LangGraph, LLMs and Twilio; streamed Q&amp;A state and output to JSON.</li>
+                    <li>Developed a voice-based intake agent using Python, LangGraph, LLMs and Twilio; streamed QnA state and output to JSON.</li>
                     <li>Built Flask microservice with async routing and REST API for outbound calls.</li>
                     <li>Automated Airtable enrichment to prefill forms; reduced call length by 35%.</li>
                     <li>Designed and developed User-Interface using HTML, CSS; Deployed containerized service on AWS.</li>
@@ -173,7 +173,7 @@ export default function Home() {
               <h4 className="font-semibold text-base mb-2">AR Environmental Solutions</h4>
               <ul className="list-disc pl-5 text-sm">
                 <li>Supported literature review on organic food and health outcomes.</li>
-                <li>1st place, Sobeys Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
+                <li>1st place Sobeys Innovation Case Competition—bioethanol waste-to-fuel pitch.</li>
                 <li>Ran statistical analysis on lab tests involving mineral concentrations.</li>
               </ul>
             </VerticalTimelineElement>
