@@ -46,24 +46,8 @@ export default function Home() {
             </nav>
 
             <div className="flex items-center gap-7">
-              <a href="#subscribe" className="font-semibold">
-                Subscribe
-              </a>
-              <button aria-label="Search" className="leading-none">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-              </button>
+           
+          
             </div>
           </div>
 
@@ -156,6 +140,11 @@ export default function Home() {
                 <li>Built ETL pipeline (Python, SQL) for 50k+ daily DC order cuts; quantified impact of cut size on near-expiry pushes via logistic regression, attributing $1.58M in near-expiry inventory to prior cuts.</li>
               </ul>
             </VerticalTimelineElement>
+
+
+              <div className="absolute left-1/2 top-0 -translate-x-50 -translate-y-21 z-170">
+              <GLBViewer modelUrl="/6f47c788-9352-4c62-a359-8f205ce9a8d8-textured.glb" />
+            </div>
             <VerticalTimelineElement
               contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
               contentArrowStyle={{ borderRight: '7px solid #000' }}
@@ -171,6 +160,9 @@ export default function Home() {
                 <li>Replaced Excel workflows with Centralized data pipelines and model outputs in Power BI; collaborated with cross-functional teams to translate analytics into dashboards for senior stakeholders and CRO.</li>
               </ul>
             </VerticalTimelineElement>
+            <div className="absolute left-1/2 top-0 -translate-x-50 translate-y-360 z-170">
+              <GLBViewer modelUrl="/abc3d95b-866c-4534-9652-c996168706eb-textured.glb" />
+            </div>
             <VerticalTimelineElement
               contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
               contentArrowStyle={{ borderRight: '7px solid #000' }}
@@ -225,7 +217,7 @@ export default function Home() {
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">OpenAI</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">FAISS</span>
               </div>
-              <div className="text-xs text-gray-700 mb-2">Sept 2022 – Aug 2024</div>
+              
               <ul className="list-disc pl-5 text-sm">
                 <li>Deployed a full-stack RAG assistant that answers program- and course-related queries across 3k+ courses.</li>
                 <li>Python script to scrape timetable HTML into structured JSON and rendered an interactive prerequisite graph for 3K+ courses, streamlining degree-planning decisions.</li>
@@ -282,22 +274,68 @@ export default function Home() {
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/project4.jpg"
-              alt="Bike-Share Demand Forecasting"
+              alt="NFL Third Down Success Rate"
               width={600}
               height={400}
               className="w-full h-48 object-cover border-b-[3px] border-black"
             />
             <div className="p-5 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold mb-1">Bike-Share Demand Forecasting</h3>
+              <h3 className="text-xl font-bold mb-1">NFL Third Down Success Rate</h3>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">R</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Shiny</span>
                 <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Tidyverse</span>
               </div>
               <ul className="list-disc pl-5 text-sm">
-                <li>Cleaned 2.3M ride logs; extracted seasonality + weather features.</li>
-                <li>Trained Regression Model; validated with blocked time-series CV.</li>
-                <li>Built an interactive dashboard for operations planning.</li>
+                <li>Generalized Linear Mixed Model (GLMM) to analyze third-down football plays, catering to the hierarchical data structure from games to teams.</li>
+                <li>Trained Regression Model</li>
+                <li>The final model's adequacy was ascertained by plotting deviance residuals against predictors and calculating the AUC of the ROC curve.</li>
+              </ul>
+            </div>
+          </div>
+          {/* Project Card 5: NFL Play Prediction */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/project5.jpg"
+              alt="NFL Play Prediction"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-1">NFL Play Prediction</h3>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">scikit-learn</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Pandas</span>
+              </div>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Analyzed NFL play-by-play data to predict play outcomes.</li>
+                <li>Trained and validated classification models for play success.</li>
+                <li>Visualized feature importances and model performance.</li>
+              </ul>
+            </div>
+          </div>
+          {/* Project Card 6: Toronto Real Estate Dashboard */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/project6.jpg"
+              alt="Toronto Real Estate Dashboard"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-1">Toronto Real Estate Dashboard</h3>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">R</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Shiny</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Leaflet</span>
+              </div>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Aggregated Toronto real estate sales data from multiple sources.</li>
+                <li>Built an interactive dashboard for price trends and mapping.</li>
+                <li>Enabled filtering by neighborhood, property type, and time period.</li>
               </ul>
             </div>
           </div>
@@ -310,75 +348,62 @@ export default function Home() {
 // -------------------------------------------------
 // Typewriter with styled spans for headline and UofT
 // -------------------------------------------------
+// -------------------------------------------------
+//  Typewriter with new summary text
+// -------------------------------------------------
 function TypewriterStyled() {
   const speed = 25;
-  // Split into styled parts
-  const headline = 'Hi! Welcome to my portfolio!';
-  const beforeUofT = '\n\nI am a Statistics and Computer Science student with experience in data analytics and software development.';
-  const uoft = 'UofT';
-  const afterUofT = ' with experience in data analytics and software development.\n\nMy experience spans statistical and data analysis, research methods, and leveraging these skills to drive meaningful insights.\n\nI am passionate about machine learning and data science, and I am eager to apply my expertise to solve complex problems.';
 
-  // Compose the full text with markers for styled spans
-  const fullText = `${headline}${beforeUofT.replace('student', 'student at <UofT>')}${afterUofT}`;
+  /* ---------- 1. Content ---------- */
+  const headline =
+    'Hi there — welcome to my portfolio!';
+  const body = `
+I'm a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I've:
 
-  // Remove <UofT> for typewriter effect, but track where to style
-  const displayText = fullText.replace('<UofT>', uoft);
-  const uoftIndex = displayText.indexOf(uoft);
-  const headlineEnd = headline.length;
-  const uoftEnd = uoftIndex + uoft.length;
+• Analyzed operational data, turning ad-hoc SQL, Python notebooks, and R scripts into automated ETL pipelines and Power BI dashboards that guide supply-chain and finance decisions.
 
+• Engineered full-stack ML features — from a Retrieval-Augmented-Generation course-advisor bot to Twilio-powered voice agents — deploying them with FastAPI, Docker, and cloud services (AWS, GCP Vertex AI).
+
+• Researched machine-learning methods, from U-Net medical-image segmentation to adversarial auto-encoders for paper recommendation, and translated the findings into production code.
+  `;
+
+  const fullText = `${headline}${body}`;
+
+  /* ---------- 2. Typewriter state ---------- */
   const [count, setCount] = useState(0);
   useEffect(() => {
-    if (count < displayText.length) {
-      const timeout = setTimeout(() => setCount(count + 1), speed);
-      return () => clearTimeout(timeout);
+    if (count < fullText.length) {
+      const id = setTimeout(() => setCount(count + 1), speed);
+      return () => clearTimeout(id);
     }
-  }, [count, displayText.length]);
+  }, [count, fullText.length]);
 
-  // Render with styled spans
+  /* ---------- 3. Render spans with same structure ---------- */
   const renderText = () => {
-    const chars = displayText.slice(0, count);
-    let out = [];
-    let i = 0;
-    // Headline
-    if (count > 0) {
-      const end = Math.min(headlineEnd, count);
-      if (end > 0) {
-        out.push(
-          <span key="headline" className="font-bold text-black text-2xl md:text-3xl">
-            {chars.slice(0, end)}
-          </span>
-        );
-        i = end;
-      }
-    }
-    // Body before UofT
-    if (i < uoftIndex && count > i) {
-      const end = Math.min(uoftIndex, count);
+    const shown = fullText.slice(0, count);
+    const out = [];
+
+    // headline span
+    const headlineEnd = headline.length;
+    if (shown.length) {
       out.push(
-        <span key="body1" className="text-lg md:text-xl">
-          {chars.slice(i, end)}
+        <span
+          key="headline"
+          className="font-bold text-black text-2xl md:text-3xl"
+        >
+          {shown.slice(0, Math.min(headlineEnd, shown.length))}
         </span>
       );
-      i = end;
     }
-    // UofT styled
-    if (count > uoftIndex) {
-      const end = Math.min(uoftEnd, count);
-      if (end > uoftIndex) {
-        out.push(
-          <span key="uoft" className="font-bold text-black">
-            {chars.slice(uoftIndex, end)}
-          </span>
-        );
-        i = end;
-      }
-    }
-    // Rest of body
-    if (count > i) {
+
+    // body span(s)
+    if (shown.length > headlineEnd) {
       out.push(
-        <span key="body2" className="text-lg md:text-xl">
-          {chars.slice(i)}
+        <span
+          key="body"
+          className="text-lg md:text-xl"
+        >
+          {shown.slice(headlineEnd)}
         </span>
       );
     }
@@ -392,6 +417,7 @@ function TypewriterStyled() {
     </p>
   );
 }
+
 
 // Three.js GLB model viewer component
 function GLBViewer({ modelUrl }: { modelUrl: string }) {
@@ -413,12 +439,19 @@ function GLBViewer({ modelUrl }: { modelUrl: string }) {
     renderer.setSize(300, 300);
     mountRef.current.appendChild(renderer.domElement);
 
-    // Lighting
-    const ambient = new THREE.AmbientLight(0xffffff, 1.2);
+    // Lighting (brighter)
+    const ambient = new THREE.AmbientLight(0xffffff, 3.5);
     scene.add(ambient);
-    const directional = new THREE.DirectionalLight(0xffffff, 0.8);
+    const directional = new THREE.DirectionalLight(0xffffff, 3);
     directional.position.set(2, 5, 5);
     scene.add(directional);
+    const hemi = new THREE.HemisphereLight(0xffffff, 0x444444, 2.2);
+    hemi.position.set(0, 20, 0);
+    scene.add(hemi);
+
+    // Tone mapping for brighter look
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.5;
 
     // Load model
     const loader = new GLTFLoader();
