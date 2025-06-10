@@ -95,36 +95,36 @@ export default function Home() {
         className="border-t border-black py-16 lg:py-24 px-2 lg:px-0 relative"
       >
         <h2 className="mb-8 text-3xl font-semibold uppercase">Experience</h2>
-        {/* GLB model absolutely positioned in front of timeline */}
-       
+        {/* GLB models absolutely positioned */}
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[400px] z-10">
+          <GLBViewer modelUrl="/0a7f7cf3-bb50-40da-8610-477fc0dec503-textured.glb" />
+        </div>
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[600px] z-10">
+          <GLBViewer modelUrl="/6f47c788-9352-4c62-a359-8f205ce9a8d8-textured.glb" />
+        </div>
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[800px] z-10">
+          <GLBViewer modelUrl="/abc3d95b-866c-4534-9652-c996168706eb-textured.glb" />
+        </div>
+        
         <div className="max-w-2xl mx-auto">
-          <VerticalTimeline
-            lineColor="#000"
-          >
+          <VerticalTimeline lineColor="#000">
             {/* Software Developer Intern element */}
-            <div className="flex flex-col lg:flex-row items-stretch w-full">
-              <div className="flex-1">
-                <VerticalTimelineElement
-                  contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
-                  contentArrowStyle={{ borderRight: '7px solid #000' }}
-                  date="Apr 2025 – Present"
-                  iconStyle={{ background: '#000', color: '#f2efe8', boxShadow: '0 0 0 4px #f2efe8' }}
-                >
-                  <h3 className="font-bold text-lg mb-1">Software Developer Intern</h3>
-                  <h4 className="font-semibold text-base mb-2">Philer.ai</h4>
-                  <ul className="list-disc pl-5 text-sm">
-                    <li>Developed a voice-based intake agent using Python, LangGraph, LLMs and Twilio; streamed QnA state and output to JSON.</li>
-                    <li>Built Flask microservice with async routing and REST API for outbound calls.</li>
-                    <li>Automated Airtable enrichment to prefill forms; reduced call length by 35%.</li>
-                    <li>Designed and developed User-Interface using HTML, CSS; Deployed containerized service on AWS.</li>
-                  </ul>
-                </VerticalTimelineElement>
-              </div>
-              
-            </div>
-            <div className="absolute left-1/2 top-0 -translate-x-50 translate-y-105 z-170">
-              <GLBViewer modelUrl="/0a7f7cf3-bb50-40da-8610-477fc0dec503-textured.glb" />
-            </div>
+            <VerticalTimelineElement
+              contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
+              contentArrowStyle={{ borderRight: '7px solid #000' }}
+              date="Apr 2025 – Present"
+              iconStyle={{ background: '#000', color: '#f2efe8', boxShadow: '0 0 0 4px #f2efe8' }}
+            >
+              <h3 className="font-bold text-lg mb-1">Software Developer Intern</h3>
+              <h4 className="font-semibold text-base mb-2">Philer.ai</h4>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Developed a voice-based intake agent using Python, LangGraph, LLMs and Twilio; streamed QnA state and output to JSON.</li>
+                <li>Built Flask microservice with async routing and REST API for outbound calls.</li>
+                <li>Automated Airtable enrichment to prefill forms; reduced call length by 35%.</li>
+                <li>Designed and developed User-Interface using HTML, CSS; Deployed containerized service on AWS.</li>
+              </ul>
+            </VerticalTimelineElement>
+
             {/* Analytics Engineer element */}  
             <VerticalTimelineElement
               contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
@@ -141,14 +141,11 @@ export default function Home() {
               </ul>
             </VerticalTimelineElement>
 
-
-              <div className="absolute left-1/2 top-0 -translate-x-50 -translate-y-21 z-170">
-              <GLBViewer modelUrl="/6f47c788-9352-4c62-a359-8f205ce9a8d8-textured.glb" />
-            </div>
+            {/* Finance Risk Analytics element */}
             <VerticalTimelineElement
               contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
               contentArrowStyle={{ borderRight: '7px solid #000' }}
-              date="  May 2024 – Dec 2024"
+              date="May 2024 – Dec 2024"
               iconStyle={{ background: '#000', color: '#f2efe8', boxShadow: '0 0 0 4px #f2efe8' }}
             >
               <h3 className="font-bold text-lg mb-1">Finance Risk Analytics Intern</h3>
@@ -156,13 +153,11 @@ export default function Home() {
               <ul className="list-disc pl-5 text-sm">
                 <li>Built a Python script hierarchical clustering to deduplicate 5k+ counterparty names, automating canonical name mapping and eliminating manual CRM data cleanup.</li>
                 <li>Engineered ETL ingesting SQL/SharePoint for daily liquidity models.</li>
-    
                 <li>Replaced Excel workflows with Centralized data pipelines and model outputs in Power BI; collaborated with cross-functional teams to translate analytics into dashboards for senior stakeholders and CRO.</li>
               </ul>
             </VerticalTimelineElement>
-            <div className="absolute left-1/2 top-0 -translate-x-50 translate-y-360 z-170">
-              <GLBViewer modelUrl="/abc3d95b-866c-4534-9652-c996168706eb-textured.glb" />
-            </div>
+
+            {/* Research Assistant element */}
             <VerticalTimelineElement
               contentStyle={{ background: '#f2efe8', color: '#000', border: '1px solid #000' }}
               contentArrowStyle={{ borderRight: '7px solid #000' }}
@@ -223,7 +218,55 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* Project Card 2: MedACL – MRI Analyzer */}
+          {/* Project Card 2: LLM Multi Agent Task Automation */}
+          <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
+            <Image
+              src="/love.png"
+              alt="LLM Multi Agent Task Automation"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover border-b-[3px] border-black"
+            />
+            <div className="p-5 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-1">LLM Multi Agent Task Automation</h3>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Python</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">LangGraph</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Multi-Agent</span>
+                <span className="bg-[#f2efe8] border border-black px-2 py-1 text-xs font-semibold rounded">Automation</span>
+              </div>
+              <div className="flex gap-2 mt-2 mb-2">
+                <a
+                  href="https://youtu.be/FtP3gifXdr4?si=oQxUrAhnAhGZ0nI8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-1 border border-red-600 rounded bg-red-600 text-white text-xs font-semibold hover:bg-red-700 hover:border-red-700 transition-colors w-fit"
+                >
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  YouTube
+                </a>
+                <a
+                  href="/CUCAI_2025___Lovelytics (2).pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-1 border border-black rounded bg-[#f2efe8] text-black text-xs font-semibold hover:bg-black hover:text-[#f2efe8] transition-colors w-fit"
+                >
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  Paper
+                </a>
+              </div>
+              <ul className="list-disc pl-5 text-sm">
+                <li>Developed multi-agent LLM system for automated task orchestration and workflow management.</li>
+                <li>Implemented LangGraph framework for complex agent coordination and state management.</li>
+                <li>Presented research findings at CUCAI 2025 conference on AI automation techniques.</li>
+              </ul>
+            </div>
+          </div>
+          {/* Project Card 3: MedACL – MRI Analyzer */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/ACL.png"
@@ -255,7 +298,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* Project Card 3: Research Paper Recommender */}
+          {/* Project Card 4: Research Paper Recommender */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/aae.png"
@@ -285,7 +328,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* Project Card 4: Bike-Share Demand Forecasting */}
+          {/* Project Card 5: Bike-Share Demand Forecasting */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/nfl.png"
@@ -317,7 +360,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* Project Card 5: Note Net */}
+          {/* Project Card 6: Note Net */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/note.png"
@@ -348,7 +391,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* Project Card 6: Toronto Real Estate Dashboard */}
+          {/* Project Card 7: Toronto Real Estate Dashboard */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
             <Image
               src="/site.png"
@@ -398,7 +441,7 @@ function TypewriterStyled() {
   const headline =
     'Hi there — welcome to my portfolio!';
   const body = `
-I am fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I have:
+I&apos;m a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I&apos;ve:
 
 • Analyzed operational data, turning ad-hoc SQL, Python notebooks, and R scripts into automated ETL pipelines and Power BI dashboards that guide supply-chain and finance decisions.
 
