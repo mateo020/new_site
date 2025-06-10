@@ -94,7 +94,7 @@ export default function Home() {
         id="experience"
         className="border-t border-black py-16 lg:py-24 px-2 lg:px-0 relative"
       >
-        <h2 className="mb-8 text-3xl font-semibold uppercase">Experience</h2>
+        <h2 className="mb-8 text-3xl font-semibold uppercase ml-8">Experience</h2>
         {/* GLB models absolutely positioned */}
         <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[587px] z-10">
           <GLBViewer modelUrl="/0a7f7cf3-bb50-40da-8610-477fc0dec503-textured.glb" />
@@ -182,7 +182,7 @@ export default function Home() {
         id="projects"
         className="border-t border-black py-16 lg:py-24 px-2 lg:px-0"
       >
-        <h2 className="mb-8 text-3xl font-semibold uppercase">Projects</h2>
+        <h2 className="mb-8 text-3xl font-semibold uppercase ml-8">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Project Card 1: UofT Course Navigator */}
           <div className="border-[3px] border-black bg-white rounded-lg overflow-hidden flex flex-col">
@@ -441,7 +441,7 @@ function TypewriterStyled() {
   const headline =
     'Hi there — welcome to my portfolio!';
   const body = `
-I&apos;m a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I&apos;ve:
+I am a fourth-year Statistics × Computer Science student at the University of Toronto. Over the last few years I have:
 
 • Analyzed operational data, turning ad-hoc SQL, Python notebooks, and R scripts into automated ETL pipelines and Power BI dashboards that guide supply-chain and finance decisions.
 
