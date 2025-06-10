@@ -96,13 +96,13 @@ export default function Home() {
       >
         <h2 className="mb-8 text-3xl font-semibold uppercase">Experience</h2>
         {/* GLB models absolutely positioned */}
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[400px] z-10">
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[587px] z-10">
           <GLBViewer modelUrl="/0a7f7cf3-bb50-40da-8610-477fc0dec503-textured.glb" />
         </div>
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[600px] z-10">
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[90px] z-10">
           <GLBViewer modelUrl="/6f47c788-9352-4c62-a359-8f205ce9a8d8-textured.glb" />
         </div>
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[800px] z-10">
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 translate-y-[1590px] z-10">
           <GLBViewer modelUrl="/abc3d95b-866c-4534-9652-c996168706eb-textured.glb" />
         </div>
         
